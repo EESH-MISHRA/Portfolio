@@ -145,9 +145,6 @@ span {
     max-width: 300px; /* Ensure a max width */
     max-height: 300px; /* Ensure a max height */
     border-radius: 50%;
-    box-shadow: 0 0 25px #b74b4b; /* Remove the 'solid' */
-    cursor: pointer;
-    transition: 0.2s linear;
 }
 
 .home-img img:hover {
