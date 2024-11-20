@@ -273,89 +273,93 @@ span{
         margin-top: 4rem;
     }
 }
-.skills{
+.skills {
     text-align: center;
 }
-.langu{
+.langu {
     text-align: center;
     color: #b74b4b;
     font-size: 4.7rem;
 }
-.lang{
-    height: 30rem;
+.lang {
+    height: auto; /* Adjust height to fit content */
     display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center align items */
     gap: 3.4rem;
     padding: 5rem;
 }
-.python{
+.python {
     background-image: url(python.png);
     height: 9.5rem;
     width: 9.5rem;
     background-size: 100%;
 }
-.json{
+.json {
     background-image: url(jsoncopy.png);
     height: 9.5rem;
     width: 9.5rem;
     background-size: 100%;
 }
-.photoshop{ background-image: url(photoshop.png);
-height: 9.5rem;
-width: 9.5rem;
-background-size: 100%;}
-.mongo{
+.photoshop {
+    background-image: url(photoshop.png);
+    height: 9.5rem;
+    width: 9.5rem;
+    background-size: 100%;
+}
+.mongo {
     background-image: url(mong.png);
     height: 9.5rem;
     width: 9.5rem;
     background-size: 100%;
 }
-.mysql{
+.mysql {
     background-image: url(mysql.png);
     height: 9.5rem;
     width: 9.5rem;
     background-size: 100%;
 }
-.opencv{
+.opencv {
     background-image: url(opencv.png);
     height: 9.5rem;
     width: 9.5rem;
     background-size: 100%;
 }
-.lighroom{
+.lighroom {
     background-image: url(lightroom.png);
     height: 9.5rem;
     width: 9.5rem;
     background-size: 100%;
 }
-.pytorch{
+.pytorch {
     background-image: url(pytorch.png);
     height: 9.5rem;
     width: 9.5rem;
     background-size: 100%;
 }
-.dj{
+.dj {
     background-image: url(django.png);
     height: 9.5rem;
     width: 9.5rem;
     background-size: 100%;
 }
-.arduino{
+.arduino {
     background-image: url(arduino.png);
     height: 9.5rem;
     width: 9.5rem;
     background-size: 100%;
 }
-.c{
+.c {
     background-image: url(c.png);
     height: 9.5rem;
     width: 9.5rem;
     background-size: 100%;
 }
-.e{
+.e {
     color: #b74b4b;
     text-align: center;
     font-size: 4rem;
 }
-.edu{
-    font-size: 2rem ;
+.edu {
+    font-size: 2rem;
 }
