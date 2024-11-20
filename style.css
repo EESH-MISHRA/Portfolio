@@ -232,6 +232,7 @@ span{
 @keyframes words{
     0%, 20%{
         content: "Fullstack UI/UX Developer";
+        font-size: 3rem;
     }
     21%, 40%{
         content: "AI Vision Developer";
