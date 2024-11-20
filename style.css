@@ -276,90 +276,96 @@ span{
 .skills {
     text-align: center;
 }
+
 .langu {
     text-align: center;
     color: #b74b4b;
     font-size: 4.7rem;
 }
+
 .lang {
-    height: auto; /* Adjust height to fit content */
     display: flex;
     flex-direction: column; /* Arrange items in a column */
     align-items: center; /* Center align items */
     gap: 3.4rem;
     padding: 5rem;
 }
+
+.lang div {
+    background-size: contain; /* Ensure the entire image fits within the div */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    width: 50px; /* Set a responsive width */
+    height: 50px; /* Set a responsive height */
+}
+
 .python {
     background-image: url(python.png);
-    height: 9.5rem;
-    width: 9.5rem;
-    background-size: 100%;
 }
+
 .json {
     background-image: url(jsoncopy.png);
-    height: 9.5rem;
-    width: 9.5rem;
-    background-size: 100%;
 }
+
 .photoshop {
     background-image: url(photoshop.png);
-    height: 9.5rem;
-    width: 9.5rem;
-    background-size: 100%;
 }
+
 .mongo {
     background-image: url(mong.png);
-    height: 9.5rem;
-    width: 9.5rem;
-    background-size: 100%;
 }
+
 .mysql {
     background-image: url(mysql.png);
-    height: 9.5rem;
-    width: 9.5rem;
-    background-size: 100%;
 }
+
 .opencv {
     background-image: url(opencv.png);
-    height: 9.5rem;
-    width: 9.5rem;
-    background-size: 100%;
 }
+
 .lighroom {
     background-image: url(lightroom.png);
-    height: 9.5rem;
-    width: 9.5rem;
-    background-size: 100%;
 }
+
 .pytorch {
     background-image: url(pytorch.png);
-    height: 9.5rem;
-    width: 9.5rem;
-    background-size: 100%;
 }
+
 .dj {
     background-image: url(django.png);
-    height: 9.5rem;
-    width: 9.5rem;
-    background-size: 100%;
 }
+
 .arduino {
     background-image: url(arduino.png);
-    height: 9.5rem;
-    width: 9.5rem;
-    background-size: 100%;
 }
+
 .c {
     background-image: url(c.png);
-    height: 9.5rem;
-    width: 9.5rem;
-    background-size: 100%;
 }
+
 .e {
     color: #b74b4b;
     text-align: center;
     font-size: 4rem;
 }
+
 .edu {
     font-size: 2rem;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .lang {
+        padding: 2rem; /* Adjust padding for smaller screens */
+        gap: 2rem; /* Adjust gap for smaller screens */
+    }
+
+    .lang div {
+        width: 40px; /* Adjust width for smaller screens */
+        height: 40px; /* Adjust height for smaller screens */
+    }
+
+    .home-img img {
+        width: 60%; /* Adjust image width for smaller screens */
+        margin-top: 2rem;
+    }
 }
