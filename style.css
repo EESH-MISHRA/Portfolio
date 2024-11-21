@@ -8,6 +8,7 @@
     border: none;
     outline: none;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 html{
@@ -20,6 +21,7 @@ body{
     overflow-x: hidden;
     background-color: black;
     color: white;
+    margin: 0;
 }
 
 header{
@@ -35,6 +37,7 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: #1616162b; 
 }
 
 .logo{
@@ -284,19 +287,20 @@ span{
 
 .lang {
     display: flex;
-    flex-direction: column; /* Arrange items in a column */
+    flex-direction: row; /* Arrange items in a column */
     align-items: center; /* Center align items */
-    gap: 3.4rem;
+    /* gap: 3.4rem; */
     padding: 5rem;
+    
 }
 
-.lang div {
+/* .lang div {
     background-size: contain; /* Ensure the entire image fits within the div */
-    background-repeat: no-repeat; /* Prevent background from repeating */
-    width: 50px; /* Set a responsive width */
-    height: 50px; /* Set a responsive height */
-}
-
+   /* background-repeat: no-repeat; /* Prevent background from repeating */
+    /*width: 50px; /* Set a responsive width */
+    /*height: 50px; /* Set a responsive height */
+/*
+/
 .python {
     background-image: url(python.png);
 }
@@ -339,6 +343,13 @@ span{
 
 .c {
     background-image: url(c.png);
+} */
+
+
+.lang img{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
 }
 
 .e {
@@ -395,4 +406,139 @@ nav a.active {
 .play-music:hover {
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
+}
+
+
+@media (max-width: 708px){
+    header{
+        display: none;
+    }
+}
+
+
+
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: black;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }
+
+
+  .container{
+	width: 100%;
+	padding: 35px 10%;
+}
+.container{
+	padding-right: calc(10% - 30px);
+}
+main.row{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+}
+.col header.title{
+	font-family: helvetica;
+	color: #b74b4b;
+	padding: 0px 0px 20px 30px;
+}
+.col .contents{
+	padding: 0px 30px;
+	border-left: 2px solid #bababa;
+}
+.col .contents .box{
+	position: relative;
+	padding: 20px;
+	border: 1px solid #eaeaea;
+	background-color: #ffffff;
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom: 20px;
+}
+.col .contents .box:hover{
+	box-shadow: 0px 3px 12px 0px #ccc;
+	border: 1px solid transparent;
+}
+.col .contents .box::before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	top: 0;
+	background-color: #b74b4b;
+	border: 2px solid white;
+}
+.box h4{
+	position: relative;
+	color: #b74b4b;
+}
+.box h3{
+	font-size: 19px;
+	padding: 10px 0px 6px;
+	font-family: helvetica;
+	color: #444;
+}
+.box p{
+	line-height: 1.2;
+	color: #666;
+	font-size: 17px;
+}
+@media(max-width: 768px){
+	main.row{
+		grid-template-columns: 1fr;
+	}
+	.row .col:nth-child(2){
+		margin-top: 30px;
+	}
+}
+
+.col{
+    height: 200px;
 }
