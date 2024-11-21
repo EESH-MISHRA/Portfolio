@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="en">
     
 <head>
@@ -11,66 +10,86 @@
 </head>
 <body>
     <header>
+       
         <a href="#" class="logo">Eesh</a>
         <nav> 
         <a href="#home" class="active">Home</a>
         <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+        <a href="#education">Education</a> 
+        <a href="#contact">Resume</a> </nav>
         <a href="#" class="play-music">My Fav Music</a>
-        <audio id="myAudio" src="song.mp3" controls style="display: none;"></audio></nav>
-        
+        <audio id="myAudio" src="song.mp3" controls style="display: none;"></audio>
+    </div>
+    
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-img">
             <img src="profile.jpg" alt="">
         </div>
         <div class="home-content">
-            <h1>Hi, It's <span>Eesh Mishra</span></h1> <h3 class="typing-text">I'm a <span></span></h3> <p><br>FullStack UI/UX Developer, and IoT Developer with a deep passion for technology and innovation. My journey in the tech world has equipped me with a diverse skill set and a strong foundation in both front-end and back-end development, user interface and experience design, and the Internet of Things (IoT).</p>
+            <h1>Hi, It's <span>Eesh Mishra</span></h1> <h3 class="typing-text">I'm a <span></span></h3> <p>FullStack UI/UX Developer, and IoT Developer with a deep passion for technology and innovation. My journey in the tech world has equipped me with a diverse skill set and a strong foundation in both front-end and back-end development, user interface and experience design, and the Internet of Things (IoT).</p>
             <p class="green-text"><br>As a Green Code Developer, I prioritize sustainability in my coding practices, focusing on creating energy-efficient and environmentally friendly solutions.</p> <p><br>Over the past few years, I have dedicated myself to various projects that have allowed me to hone my skills and gain significant experience in these domains. I am always eager to learn and embrace new challenges, continually striving to stay ahead in the ever-evolving tech landscape.</p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/eesh-mishra-200a06328/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/EESH-MISHRA"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/the_eesh_"><i class="fa-brands fa-instagram"></i></a>
+                <a  target="_blank" href="https://www.linkedin.com/in/eesh-mishra-200a06328/"><i class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/EESH-MISHRA"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.instagram.com/the_eesh_"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <a href="mailto:eeshmishra@hotmail.com" class="btn">Hire me</a>
         </div>
     </section>
-        <div class="skills">
+        <div class="skills" id="skills">
             <div class="langu">
-            <pre>SKILL SET</pre>
+            <pre>Skill Set</pre>
             </div>
-            <div class="lang">
-            <div class="python"></div>
-            <div class="json"></div>
-            <div class="photoshop"></div>
-            <div class="mongo"></div>
-            <div class="mysql"></div>
-            <div class="opencv"></div>
-            <div class="lighroom"></div>
-            <div class="pytorch"></div>
-            <div class="dj"></div>
-            <div class="arduino"></div>
-            <div class="c"></div>
-            </div>
+           
+            <div class="logos">
+                <div class="logos-slide">
+                  <img src="pytorch.png" />
+                  <img src="img/python.png" />
+                  <img src="arduino.png" />
+                  <img src="django.png" />
+                  <img src="jsoncopy.png" />
+                  <img src="lightroom.png" />
+                  <img src="opencv.png" />
+                  <img src="mysql.png" />
+                </div>
+          
+                <div class="logos-slide">
+                    <img src="pytorch.png" />
+                    <img src="img/python.png" />
+                    <img src="arduino.png" />
+                    <img src="django.png" />
+                    <img src="jsoncopy.png" />
+                    <img src="lightroom.png" />
+                    <img src="opencv.png" />
+                    <img src="mysql.png" />
+                </div>
+              </div>
         </div>
-        <div class="education">
             <div class="e">
-            <pre>Education</pre></div>
-            <div class="edu">
-                <pre>
-            BBL PUBLIC SCHOOL
-            PCM - CS
-            Grade - 89%
-            
-            VIT BHOPAL UNIVERSITY
-            BTECH - CSE CORE
-                </pre>
-            </div>
-            
-        </div>
+            <pre id="education">Education</pre></div>
+                <section class="col">
+                
+                    <div class="contents" >
+                        
+                        <div class="box">
+                            <h4>2024</h4>
+                            <h3>BBL PUBLIC SCHOOL </h3>
+                            <p>PCM - CS
+                                Grade - 89%</p>
+                        </div>
+        
+                        <div class="box">
+                            <h4>2024 - 2028</h4>
+                            <h3> VIT BHOPAL UNIVERSITY</h3>
+                            <p>BTECH - CSE CORE</p>
+                        </div>
+        
+                    </div>
+                </section>
 </body>
 </html>
+
 <script>
     document.querySelector('.play-music').addEventListener('click', function(event) {
         event.preventDefault(); // Prevent the default link behavior
