@@ -16,8 +16,9 @@
         <a href="#home" class="active">Home</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
-        <a href="#education">My Fav Music </a>
-        <a href="#contact">Contact</a> </nav>
+        <a href="#contact">Contact</a>
+        <a href="#" class="play-music">My Fav Music</a>
+        <audio id="myAudio" src="song.mp3" controls style="display: none;"></audio></nav>
         
     </header>
     <section class="home">
@@ -70,3 +71,15 @@
         </div>
 </body>
 </html>
+<script>
+    document.querySelector('.play-music').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        const audio = document.getElementById('myAudio');
+        if (audio.paused) {
+            audio.style.display = 'block'; // Show audio controls
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    });
+</script>
