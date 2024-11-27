@@ -11,12 +11,12 @@ var retype = {
 	//		  It works cleaner if neighboring words have different first letters.
 	//		  Spaces in phrases can cause a hiccup. Best practice to keep phrases as single words.
 	retypePhrases: [
-		'UI/UX Designer.',
+		'Fullstack Developer.',
 		'AI Vision Developer.',
 		'Power Bi Developer.',
 		'Graphic Designer.',
 		'IoT Developer.',
-		'Fullstack Developer.'
+		'UI/UX Designer.'
 	],
 	index       : -1,
 	elem        : document.getElementById('retype'),
