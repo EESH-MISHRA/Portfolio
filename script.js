@@ -24,7 +24,7 @@ var retype = {
 		var _this = this;
 		setTimeout( function(){
 			_this.deleteLetter();
-		}, 3000 ); // Delay the start of a new word by 3 seconds
+		}, 2000 ); // Delay the start of a new word by 2 seconds
 	},// END retype.start()
 	deleteRepeat: function(){
 		this.deleteLetter();
